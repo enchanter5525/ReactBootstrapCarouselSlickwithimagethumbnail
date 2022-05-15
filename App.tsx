@@ -4,16 +4,18 @@ import Carousel from 'react-bootstrap/Carousel';
 
 export default function App() {
   React.useEffect(() => {
-    // let ele = document.getElementsByClassName('carousel-indicators');
-    // for (let i = 0; i < ele.length; i++) {
-    //   ele[0].children[i].style.height = '2rem';
-    //   ele[0].children[i].style.width = '2rem';
-    //   ele[0].children[i].style.background =
-    //     "url('https://staticimg.titan.co.in/Titan/Catalog/90140SM01_3.jpg?pView=thumb') no-repeat";
-    //   ele[0].children[i].style.backgroundPosition = 'center center';
-    //   ele[0].children[i].style.backgroundSize = '38px 38px';
-    // }
-    // ele[0].children[0]?.style['background'] = "url('https://staticimg.titan.co.in/Titan/Catalog/90140SM01_3.jpg?pView=thumb')";
+    React.useEffect(() => {
+      let ele = document.getElementsByClassName('carousel-indicators');
+      for (let i = 0; i < ele[0].children.length; i++) {
+        ele[0].children[i].style.height = '2rem';
+        ele[0].children[i].style.width = '2rem';
+        ele[0].children[i].style.background =
+          "url('https://staticimg.titan.co.in/Titan/Catalog/90140SM01_3.jpg?pView=thumb') no-repeat";
+        ele[0].children[i].style.backgroundPosition = 'center center';
+        ele[0].children[i].style.backgroundSize = '38px 38px';
+      }
+      // ele[0].children[0]?.style['background'] = "url('https://staticimg.titan.co.in/Titan/Catalog/90140SM01_3.jpg?pView=thumb')";
+    });
   });
 
   return (
